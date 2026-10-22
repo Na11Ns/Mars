@@ -8,6 +8,10 @@
 
 <br/><br/>
 
+<p align="center">
+  <strong>CA:</strong> <code>Ci5ndvVVR6o7zYfKEUDEJxHfz8f5NaPdc4EonwrBpump</code>
+</p>
+
 <a href="#-what-is-mars"><img src="https://img.shields.io/badge/status-prowling-ff8fb8?style=for-the-badge&labelColor=0a0610" alt="status"/></a>
 <a href="#-the-hunt-loop"><img src="https://img.shields.io/badge/loop-prowl→stalk→pounce→groom-b9a2ff?style=for-the-badge&labelColor=0a0610" alt="loop"/></a>
 <a href="#-quickstart"><img src="https://img.shields.io/badge/python-3.9+-7cf5c4?style=for-the-badge&labelColor=0a0610&logo=python&logoColor=7cf5c4" alt="python"/></a>
