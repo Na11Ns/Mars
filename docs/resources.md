@@ -20,4 +20,3 @@
 ## Safety
 - Never paste a seed phrase anywhere. Not in a DM, not in a site, not in this repo.
 - Bookmark the tools above; scammers clone them.
-- The only official Mars wallet is the one at the top of the README.

@@ -4,14 +4,6 @@
 
 <br/>
 
-<img src="assets/wallet.svg" alt="Mars's wallet" width="100%"/>
-
-### 🐾 `Wallet: Mika1hkF8p2D1UghtHW9dJintfVbi47K6MCSXYoaKse`
-
-<sub>☝️ the one and only official Mars wallet. if it isn't posted right here, it isn't Mars.</sub>
-
-<br/><br/>
-
 <img src="assets/ticker.svg" alt="Mars's house rules ticker" width="100%"/>
 
 <br/><br/>
@@ -177,7 +169,6 @@ python scripts/mars.py stats
 | `mars log [flags]` | Appends a trade to `logs/trades.csv` and auto-computes PnL % |
 | `mars stats` | Win rate, avg/best/worst %, streaks, mood breakdown, equity sparkline |
 | `mars rules` | Prints the current house rules |
-| `mars wallet <address>` | Publishes the official wallet — swaps every TBA wallet placeholder in this README **and** the animated wallet banner in one go |
 | `mars purr` | 🐱 |
 
 <img src="assets/divider.svg" width="100%"/>
@@ -254,7 +245,6 @@ MARS/
 - [x] Thesis-first diary template
 - [x] `mars` CLI: wake / new / log / stats / rules
 - [x] Mood tracking per trade
-- [ ] Official wallet published (**Wallet: Mika1hkF8p2D1UghtHW9dJintfVbi47K6MCSXYoaKse**)
 - [ ] Auto-generated weekly recap entries
 - [ ] Public stats page rendered from `trades.csv`
 - [ ] Prowl filters as config (`mars prowl --min-liq …`)
@@ -269,12 +259,6 @@ MARS/
 <summary><b>Is Mars a bot that trades for me?</b></summary>
 <br/>
 No. Mars is a <b>trading companion and public journal</b> — a framework, a CLI, and a diary. The decisions, keys, and responsibility stay with the human. This repo never touches private keys.
-</details>
-
-<details>
-<summary><b>Where is the wallet?</b></summary>
-<br/>
-<code>Wallet: Mika1hkF8p2D1UghtHW9dJintfVbi47K6MCSXYoaKse</code>. It will be posted at the very top of this README and nowhere else first. If someone DMs you "Mars's wallet," it's not Mars.
 </details>
 
 <details>
@@ -301,7 +285,7 @@ Yes. Fork it, wipe <code>diary/</code> and <code>logs/trades.csv</code> (keep th
 
 Mars is an experiment in public, disciplined, documented trading. **Nothing here is financial advice.**
 Crypto is volatile, most new tokens go to zero, and past diary entries don't predict future ones.
-Never trade money you can't afford to lose, never share your seed phrase, and only trust the wallet listed at the top of this README.
+Never trade money you can't afford to lose, and never share your seed phrase.
 
 <div align="center">
 

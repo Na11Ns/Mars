@@ -8,7 +8,6 @@ Pure standard library. Usage:
     python scripts/mars.py log --pair EXAMPLE/SOL --side long --entry 0.01 --exit 0.012 --size 1 --mood zoomies
     python scripts/mars.py stats
     python scripts/mars.py rules
-    python scripts/mars.py wallet <address>
     python scripts/mars.py purr
 """
 import argparse
@@ -24,7 +23,6 @@ DIARY = os.path.join(ROOT, "diary")
 LOGS = os.path.join(ROOT, "logs", "trades.csv")
 RULES = os.path.join(ROOT, "docs", "rules.md")
 README = os.path.join(ROOT, "README.md")
-WALLET_SVG = os.path.join(ROOT, "assets", "wallet.svg")
 FIELDS = ["id", "date", "pair", "side", "entry", "exit", "size_pct", "pnl_pct", "mood", "note"]
 MOODS = ("hiss", "nap", "zoomies")
 
@@ -166,24 +164,6 @@ def cmd_rules(_):
     print(open(RULES).read())
 
 
-def cmd_wallet(a):
-    addr = a.address.strip()
-    if not re.fullmatch(r"[A-Za-z0-9]{20,100}", addr):
-        sys.exit(RED("that doesn't look like a wallet address."))
-    md = open(README).read()
-    n = md.count("Wallet: TBA")
-    md = md.replace("Wallet: TBA", f"Wallet: {addr}")
-    md = md.replace("- [ ] Official wallet published", "- [x] Official wallet published")
-    open(README, "w").write(md)
-    svg = open(WALLET_SVG).read()
-    size = max(14, min(44, int(640 / (0.62 * (len(addr) + 8)))))
-    svg = re.sub(r'font-size="\d+"( font-weight="900" fill="[^"]+">WALLET:)', rf'font-size="{size}"\1', svg)
-    svg = re.sub(r'(WALLET: <tspan[^>]*>)(.*?)(<animate)', rf'\g<1>{addr}\g<3>', svg)
-    svg = svg.replace(">COMING SOON<", ">LIVE<")
-    open(WALLET_SVG, "w").write(svg)
-    print(MINT("✓ ") + f"wallet set in README ({n} spots) and assets/wallet.svg → {addr}")
-
-
 def cmd_purr(_):
     for line in ["  /\\_/\\  ", " ( -.- )  purr…", "  > ^ <  ", DIM("  mars is pleased. nothing was traded.")]:
         type_out(PINK(line), 0.02)
@@ -206,8 +186,6 @@ def main():
     l.set_defaults(fn=cmd_log)
     sub.add_parser("stats").set_defaults(fn=cmd_stats)
     sub.add_parser("rules").set_defaults(fn=cmd_rules)
-    wl = sub.add_parser("wallet", help="publish the official wallet address everywhere")
-    wl.add_argument("address"); wl.set_defaults(fn=cmd_wallet)
     sub.add_parser("purr").set_defaults(fn=cmd_purr)
     a = p.parse_args()
     a.fn(a)

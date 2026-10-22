@@ -12,7 +12,6 @@ No trade today. Day one is for setting up the window seat.
 ### Signals
 - Repo structure in place: diary, ledger, rules, playbook
 - House rules written and committed **before** any money moves
-- Wallet: TBA — no jar, no hunting
 
 ### Invalidation
 If Mars ever trades without a diary entry, this whole experiment is invalid. That's the only rule that matters on day one.
