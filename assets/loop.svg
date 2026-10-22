@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 500" width="100%">
+<defs>
+<filter id="glow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+<filter id="bigglow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="10"/></filter>
+<linearGradient id="neon" x1="0" y1="0" x2="1" y2="0">
+  <stop offset="0" stop-color="#ff8fb8"/><stop offset="0.5" stop-color="#b9a2ff"/><stop offset="1" stop-color="#ff8fb8"/>
+</linearGradient><radialGradient id="lb" cx=".5" cy=".5" r=".6"><stop offset="0" stop-color="#22122b"/><stop offset="1" stop-color="#0a0610"/></radialGradient></defs>
+<rect x="2" y="2" width="996" height="496" rx="24" fill="url(#lb)" stroke="#b9a2ff" stroke-opacity=".35"/>
+<circle cx="500" cy="235" r="160" fill="none" stroke="url(#neon)" stroke-width="2" stroke-dasharray="6 10" opacity=".7"><animateTransform attributeName="transform" type="rotate" values="0 500 235;360 500 235" dur="30s" repeatCount="indefinite"/></circle>
+<circle r="5" fill="#ff8fb8" filter="url(#glow)"><animateMotion dur="8s" begin="-0.00s" repeatCount="indefinite" path="M500,75 A160,160 0 1,1 499.99,75Z"/></circle><circle r="5" fill="#b9a2ff" filter="url(#glow)"><animateMotion dur="8s" begin="-2.67s" repeatCount="indefinite" path="M500,75 A160,160 0 1,1 499.99,75Z"/></circle><circle r="5" fill="#7cf5c4" filter="url(#glow)"><animateMotion dur="8s" begin="-5.33s" repeatCount="indefinite" path="M500,75 A160,160 0 1,1 499.99,75Z"/></circle>
+<circle cx="500" cy="235" r="62" fill="none" stroke="#ff8fb8" stroke-opacity=".3"><animate attributeName="r" values="56;72;56" dur="3s" repeatCount="indefinite"/></circle>
+<text x="500" y="229" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="26" fill="#ff8fb8" filter="url(#glow)">=^.^=</text>
+<text x="500" y="255" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="11" letter-spacing="3" fill="#ffd6e5" opacity=".7">THE HUNT LOOP</text>
+<g>
+ <circle cx="500" cy="75" r="56" fill="#ff8fb8" opacity="0" filter="url(#bigglow)"><animate attributeName="opacity" values="0;.55;0;0" keyTimes="0;.12;.3;1" dur="8s" begin="0.0s" repeatCount="indefinite"/></circle>
+ <circle cx="500" cy="75" r="50" fill="#1a0f22" stroke="#ff8fb8" stroke-width="2.5"><animate attributeName="r" values="50;56;50;50" keyTimes="0;.12;.3;1" dur="8s" begin="0.0s" repeatCount="indefinite"/></circle>
+ <text x="500" y="77" text-anchor="middle" font-family="'Segoe UI',Inter,Helvetica,Arial,sans-serif" font-weight="900" font-size="17" fill="#ff8fb8">PROWL</text>
+ <text x="500" y="95" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="10.5" fill="#ffd6e5" opacity=".7">scan markets</text>
+ <text x="500" y="53" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="11" fill="#ff8fb8" opacity=".8">01</text>
+</g><g>
+ <circle cx="660" cy="235" r="56" fill="#b9a2ff" opacity="0" filter="url(#bigglow)"><animate attributeName="opacity" values="0;.55;0;0" keyTimes="0;.12;.3;1" dur="8s" begin="2.0s" repeatCount="indefinite"/></circle>
+ <circle cx="660" cy="235" r="50" fill="#1a0f22" stroke="#b9a2ff" stroke-width="2.5"><animate attributeName="r" values="50;56;50;50" keyTimes="0;.12;.3;1" dur="8s" begin="2.0s" repeatCount="indefinite"/></circle>
+ <text x="660" y="237" text-anchor="middle" font-family="'Segoe UI',Inter,Helvetica,Arial,sans-serif" font-weight="900" font-size="17" fill="#b9a2ff">STALK</text>
+ <text x="660" y="255" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="10.5" fill="#ffd6e5" opacity=".7">build thesis</text>
+ <text x="660" y="213" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="11" fill="#b9a2ff" opacity=".8">02</text>
+</g><g>
+ <circle cx="500" cy="395" r="56" fill="#7cf5c4" opacity="0" filter="url(#bigglow)"><animate attributeName="opacity" values="0;.55;0;0" keyTimes="0;.12;.3;1" dur="8s" begin="4.0s" repeatCount="indefinite"/></circle>
+ <circle cx="500" cy="395" r="50" fill="#1a0f22" stroke="#7cf5c4" stroke-width="2.5"><animate attributeName="r" values="50;56;50;50" keyTimes="0;.12;.3;1" dur="8s" begin="4.0s" repeatCount="indefinite"/></circle>
+ <text x="500" y="397" text-anchor="middle" font-family="'Segoe UI',Inter,Helvetica,Arial,sans-serif" font-weight="900" font-size="17" fill="#7cf5c4">POUNCE</text>
+ <text x="500" y="415" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="10.5" fill="#ffd6e5" opacity=".7">execute + size</text>
+ <text x="500" y="373" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="11" fill="#7cf5c4" opacity=".8">03</text>
+</g><g>
+ <circle cx="340" cy="235" r="56" fill="#ffd6e5" opacity="0" filter="url(#bigglow)"><animate attributeName="opacity" values="0;.55;0;0" keyTimes="0;.12;.3;1" dur="8s" begin="6.0s" repeatCount="indefinite"/></circle>
+ <circle cx="340" cy="235" r="50" fill="#1a0f22" stroke="#ffd6e5" stroke-width="2.5"><animate attributeName="r" values="50;56;50;50" keyTimes="0;.12;.3;1" dur="8s" begin="6.0s" repeatCount="indefinite"/></circle>
+ <text x="340" y="237" text-anchor="middle" font-family="'Segoe UI',Inter,Helvetica,Arial,sans-serif" font-weight="900" font-size="17" fill="#ffd6e5">GROOM</text>
+ <text x="340" y="255" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="10.5" fill="#ffd6e5" opacity=".7">reflect + log</text>
+ <text x="340" y="213" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="11" fill="#ffd6e5" opacity=".8">04</text>
+</g>
+<text x="500.0" y="484" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="12" fill="#ffd6e5" opacity=".5">every cycle ends in a diary entry · the loop never stops · the cat occasionally does</text>
+</svg>
